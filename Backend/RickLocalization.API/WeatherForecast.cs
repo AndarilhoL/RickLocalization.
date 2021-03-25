@@ -1,6 +1,6 @@
 using System;
 
-namespace Backend
+namespace RickLocalization.API
 {
     public class WeatherForecast
     {

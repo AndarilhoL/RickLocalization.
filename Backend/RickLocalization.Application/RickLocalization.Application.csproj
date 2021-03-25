@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RickLocalization.Domain\RickLocalization.Domain.csproj" />
+    <ProjectReference Include="..\RickLocalization.Persistence\RickLocalization.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:63355",
-      "sslPort": 44398
+      "applicationUrl": "http://localhost:18165",
+      "sslPort": 44351
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Backend": {
+    "RickLocalization.API": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
