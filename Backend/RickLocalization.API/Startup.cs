@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using RickLocalization.Application;
 using RickLocalization.Persistence;
 
 namespace RickLocalization.API
@@ -24,6 +25,8 @@ namespace RickLocalization.API
             services.AddDbContext<RickLocalizationContext>(
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
+
+            services.AddAutoMapper(typeof (AutoMapperConfig));
             
             services.AddControllers();
             services.AddSwaggerGen(c =>
