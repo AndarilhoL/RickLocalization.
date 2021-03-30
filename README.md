@@ -11,10 +11,11 @@ O sistema deve manter os cadastros de Rick's e Morty's em todas as dimensões, d
 - [Angular material](https://material.angular.io/)
 
 ### Padrões e Escolhas
-- [Code First]
-- [Auto Mapper]
-- [Repository Pattern]
-- [Rest API]
+- Code First
+- Auto Mapper
+- DDD
+- Repository Pattern
+- Rest API
 
 ### :computer: Rodando o Projeto
 
