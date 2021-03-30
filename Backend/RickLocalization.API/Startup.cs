@@ -6,7 +6,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using RickLocalization.Application;
+using RickLocalization.Application.Interface;
+using RickLocalization.Application.Services;
+using RickLocalization.Domain.Models;
 using RickLocalization.Persistence;
+using RickLocalization.Persistence.Interfaces;
+using RickLocalization.Persistence.Repositories;
 
 namespace RickLocalization.API
 {
@@ -27,7 +32,18 @@ namespace RickLocalization.API
             );
 
             services.AddAutoMapper(typeof (AutoMapperConfig));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            //Morty
+            services.AddScoped<IRepositoryBase<Morty>, MortyRepository>();
+            services.AddScoped<IMortyAppService, MortyAppService>();
+
+            //Rick
+            services.AddScoped<IRepositoryBase<Rick>, RickRepository>();
+            services.AddScoped<IRickAppService, RickAppService>();
             
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

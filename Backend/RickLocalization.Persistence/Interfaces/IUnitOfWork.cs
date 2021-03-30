@@ -1,6 +1,6 @@
 using System;
 
-namespace RickLocalization.Domain.Interfaces
+namespace RickLocalization.Persistence.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {

@@ -1,13 +1,11 @@
 using System;
 
-namespace RickLocalization.Domain.Models
+namespace RickLocalization.Application.ViewModel
 {
-    public class Morty
+    public class MortyViewModel
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string UrlImage { get; set; }
-        public Rick Rick { get; set; }
-        public Dimension Dimension { get; set; }
     }
 }

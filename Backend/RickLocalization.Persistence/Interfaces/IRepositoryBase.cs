@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace RickLocalization.Domain.Interfaces
+namespace RickLocalization.Persistence.Interfaces
 {
     public interface IRepositoryBase<T> : IDisposable where T : class
     {
