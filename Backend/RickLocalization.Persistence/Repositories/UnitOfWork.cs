@@ -1,4 +1,4 @@
-using RickLocalization.Domain.Interfaces;
+using RickLocalization.Persistence.Interfaces;
 
 namespace RickLocalization.Persistence.Repositories
 {

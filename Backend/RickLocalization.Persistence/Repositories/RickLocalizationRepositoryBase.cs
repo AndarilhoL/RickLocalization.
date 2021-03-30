@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using RickLocalization.Domain.Interfaces;
+using RickLocalization.Persistence.Interfaces;
 
 namespace RickLocalization.Persistence.Repositories
 {
@@ -10,11 +10,6 @@ namespace RickLocalization.Persistence.Repositories
     {
         protected RickLocalizationContext Db;
         protected DbSet<T> DbSet;
-
-        ~RickLocalizationRepositoryBase()
-        {
-            Dispose(false);
-        }
 
         public RickLocalizationRepositoryBase(RickLocalizationContext context)
         {
@@ -45,6 +40,11 @@ namespace RickLocalization.Persistence.Repositories
         public IEnumerable<T> List()
         {
             return DbSet.ToList();
+        }
+
+        ~RickLocalizationRepositoryBase()
+        {
+            Dispose(false);
         }
 
         #region Dispose
