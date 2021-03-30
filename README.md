@@ -22,6 +22,7 @@ O sistema deve manter os cadastros de Rick's e Morty's em todas as dimensões, d
 ```bash
 # Ir para a pasta do Backend
 $ cd Backend
+$ cd RickLocalization.API
 $ dotnet run
 
 # Em outro terminal ir para a pasta do Frontend
