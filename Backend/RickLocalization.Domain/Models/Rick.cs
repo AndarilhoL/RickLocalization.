@@ -10,6 +10,6 @@ namespace RickLocalization.Domain.Models
         public string UrlImage { get; set; }
         public Morty Morty { get; set; }
         public Dimension Dimension { get; set; }
-        public List<Dimension> DimensionsTraveller { get; set; }
+        public List<Dimension> DimensionsTravelled { get; set; }
     }
 }
